@@ -1,0 +1,44 @@
+literal_block: |  # Literal Block --> Here formatting is preserved
+  This is a block of text.
+  It preserves line breaks.
+  This is the third line.
+
+folded_block: >  # Folded Block
+  This is a folded
+  block of text.
+  It will be joined into
+  a single line in the output.
+# Here each line break is replaced by a space, which means all the text will be joined into a single line 
+# unless there’s a double new line (which will be treated as a paragraph break).
+
+folded_with_paragraphs: >
+  This is a folded block of text.
+  It will be joined into one line.
+
+  This is a new paragraph,
+  after a blank line.
+
+# + --> Keep Chomp Indicator: Final line break and any trailing empty lines are included
+# - --> Strip Chomp Indicator: Final line break and any trailing empty lines are excluded
+# No Chomp Indicator: Clipping: Final line break is preserved but any trailing empty lines not
+literal_keep: |+ 
+  This is a text block.
+  That ends with newlines.
+  The newline characters at the end of the block will be kept.
+
+literal_strip: |-
+  This is a text block.
+  That ends with newlines.
+  The newline characters at the end of the block will be removed.
+
+folded_with_trailing_newlines: >+
+  This is a folded block of text.
+  It will be joined into a single line.
+  And it keeps trailing newlines.
+
+folded_without_trailing_newlines: >-
+  This is a folded block of text.
+  It will be joined into a single line.
+  And it removes trailing newlines.
+
+  

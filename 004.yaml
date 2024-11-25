@@ -1,0 +1,11 @@
+common_config: &common # Define an anchor 'common'
+  retries: 3
+  timeout: 30
+
+env_specific_config: &env # Define an anchor 'env'
+  debug: true
+  log_level: verbose
+
+final_config:
+  <<: [*common, *env] # # Merge all key-value pairs from the 'common' and 'env' anchors using the merge key (<<)
+  timeout: 60

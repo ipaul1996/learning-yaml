@@ -1,0 +1,29 @@
+# First document: User configuration
+---  # Document separator: Marks the start of a new document
+name: Indrajit Paul
+age: 27
+known_technologies:
+  - HTML
+  - CSS
+  - JavaScript
+
+... # Optional end of the document marker
+
+# Second document: Project configuration
+---
+project_name: Evara
+description: Backend API development
+stack:
+  frontend:
+    framework: React
+    language: JavaScript
+  backend:
+    framework: Express.js
+    language: JavaScript
+
+# Third document: Environment settings
+---
+environment: production
+settings:
+  retries: 3
+  timeout: 30

@@ -1,0 +1,5 @@
+Resources: 
+
+https://spacelift.io/blog/yaml
+https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started
+https://learnxinyminutes.com/docs/yaml/

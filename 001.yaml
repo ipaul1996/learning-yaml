@@ -1,0 +1,37 @@
+name: Indrajit Paul  # We define a key-value pair
+age: 27  # We define a key-value pair
+
+known_technologies:  # We define a sequence
+  - HTML
+  - CSS
+  - Javascript
+  - TypeScript
+  - Java
+  - Node.js
+  - Express.js
+  - MySQL
+  - PostgreSQL
+  - Supabase
+  - GCP:  # We define a nested mapping under the GCP key
+    - Cloud Run
+    - Cloud Functions / Firebase Functios
+    - Google Pub-sub
+    - Cloud Schedular
+  - React
+  - Docker
+  - Github Actions
+  - JDBC
+  - JPA
+  - Hibernate
+  - Spring Core
+  - Spring Boot
+  - Spring Security
+  - Git & Github
+  - Vscode
+  - STS
+
+experience:
+  backend-engineer: 1 year 7 months
+  teaching: 8 years
+
+

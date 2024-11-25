@@ -1,0 +1,10 @@
+# Nested sequences
+-
+  - web-app-prod
+  - prod-deployments
+  - prom-monitored
+-
+  - web-app-test
+  - staging-deployments
+  - not-monitored
+ 

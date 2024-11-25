@@ -1,0 +1,7 @@
+ports:    
+- port: 8080         #service port    
+  targetPort: 8080   #Pod Port    
+  nodePort:       
+  - 30012       
+  - 30013       
+  - 30014

@@ -1,0 +1,16 @@
+stack: &stack  # Define an anchor 'stack'
+  frontend:
+    framework: React
+    language: Javascript
+  backend:
+    framework: Express.js
+    language: Javascript
+
+projects:
+  project1:
+    name: fb-clone
+    stack: *stack  # Reference the 'stack' anchor here
+  project2:
+    name: central-api
+    stack: *stack  # Reference the 'stack' anchor here
+# It reuses the entire structure of the anchor (&stack) and assigns it as the value of the stack property.

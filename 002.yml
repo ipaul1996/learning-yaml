@@ -1,0 +1,12 @@
+default_settings: &default
+  timeout: 30
+  retries: 3
+# We define a mapping called default_settings. 
+# This mapping is labeled with the anchor &default, allowing us to reference it later.
+
+production_settings:
+  <<: *default
+  retries: 5
+# In production_settings, we merge all key-value pairs from the default anchor using the merge key (<<). 
+# It essentially "unpacks" the default_settings mapping at the top level of the production_settings mapping.
+# We override the retries key with a new value, 5, while keeping the timeout value from the merged anchor.
